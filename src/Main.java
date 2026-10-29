@@ -397,9 +397,9 @@ public void countDown (int countDown, boolean printStuff){
 // mini games---------
 
 //notes
-//System.in.available() will check if theres something in the current input stream
+//System.in.available() will check if there's something in the current input stream
 //System.in.read will pull a waiting byte out of input stream
-// making a buffer will give system.in.read a place to put the input streram i dont want
+// making a buffer will give system.in.read a place to put the input stream that I don't want
 
 // wack stuff mini game
 public int wackSomething (int speed, int length) throws IOException {
@@ -631,14 +631,13 @@ public class stick {
 
     //metadata-----------
     private String name; // cool name
-    //private String wood; // elemental type from pokemon, unnecessary
     private int stiffness; // how many avalible blocks before it breaks // also unnecessary
     private int strength; // damage
     private String attackType; // what minigame plays when attacking, also unnecessary
     private double value; // sell price
     private int id; // creation id, should never change
 
-    public static int totalSticks; // total num of stics made
+    public static int totalSticks; // total number of sticks made
 
     // constructor--------
     public stick ( String Name, int Stiff, int Str , String aT) {
@@ -774,7 +773,7 @@ public class enemy {
 public class stickStorage { // there should only be one of these and action function could be put here
 
     //metadata-----------
-    private final ArrayList<stick> storage = new ArrayList<>() ; // stores reference to new arrary list
+    private final ArrayList<stick> storage = new ArrayList<>() ; // stores reference to new array list
     //  .add(value)    .get(index)    .remove(index)    .size()
 
     private stick primary = null;
@@ -799,7 +798,7 @@ public class stickStorage { // there should only be one of these and action func
 
     public ArrayList<stick> getByName(String name){ // gets sticks by comparing name (can find multiple sticks)
 
-         ArrayList<stick> collection = new ArrayList<>() ; //the list of sticks thats being returned
+         ArrayList<stick> collection = new ArrayList<>() ; //the list of sticks that's being returned
 
         name = name.toLowerCase();
 
@@ -854,7 +853,7 @@ public class stickStorage { // there should only be one of these and action func
 
     public ArrayList<stick> getStiffest(){ // gets sticks by comparing name (can find multiple sticks)
 
-        ArrayList<stick> collection = new ArrayList<>() ; //the list of sticks thats being returned
+        ArrayList<stick> collection = new ArrayList<>() ; //the list of sticks that's being returned
 
         if (storage.isEmpty()){
             return collection;
@@ -904,5 +903,3 @@ public class stickStorage { // there should only be one of these and action func
 }
 
 
-
-// cool nachos
